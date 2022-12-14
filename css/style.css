@@ -14,10 +14,14 @@ img {
 
 body {
   min-width: 768px;
+  background: #E5E5E5;
 }
 
 :root {
-
+  --base-color: #000;
+  --x-color: #FF9900;
+  --y-color: #FFB84D;
+  --z-color: #E1670E;
 }
 
 /*  Glob  */
@@ -57,4 +61,32 @@ body {
 
 a {
   text-decoration: none;
+}
+
+
+/*  Header  */
+.header {
+  background-color: #fff;
+  border-radius: 0 0 32px 32px;
+  justify-content: flex-end;
+}
+
+.header-menu {
+  align-self: center;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__nav {
+  margin-right: 260px;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 85px;
+}
+
+.nav__link {
+  color: var(--base-color);
 }
