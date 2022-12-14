@@ -60,6 +60,7 @@ body {
 
 :root {
   --base-color: #000;
+  --n-base-color: #fff;
   --x-color: #FF9900;
   --y-color: #FFB84D;
   --z-color: #E1670E;
@@ -107,6 +108,7 @@ a {
 
 /*  Header  */
 .header {
+  height: 100px;
   padding: 14px;
   background-color: #fff;
   border-radius: 0 0 32px 32px;
@@ -134,4 +136,50 @@ a {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+}
+
+
+/*  hero  */
+.hero-img {
+  width: 1770px;
+  min-height: 620px;
+  padding: 100px 80px;
+  background-image: url(/img/hero.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 32px;
+}
+
+.hero__decrs {
+  flex-direction: column;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 24px;
+  width: 837px;
+  color: var(--n-base-color);
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 85px;
+}
+
+.hero__des {
+  margin-bottom: 115px;
+  width: 790px;
+  color: var(--n-base-color);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.hero__btn {
+  padding: 25px 40px;
+  color: var(--n-base-color);
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+  background-color: var(--x-color);
+  border-radius: 16px;
 }
