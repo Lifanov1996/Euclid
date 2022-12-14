@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 768px;
+}
+
+:root {
+
+}
+
+/*  Glob  */
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 1800px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-title {
+
+}
+
+.section-offset {
+  margin-bottom: 100px;
+}
+
+.section-offset-1 {
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+}
