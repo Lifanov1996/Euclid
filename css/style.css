@@ -135,11 +135,66 @@ a {
 }
 
 .nav__link {
+  position: relative;
   color: var(--base-color);
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+  padding-bottom: 5px;
+  transition: color 0.3s;
 }
+
+.nav__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--x-color);
+  opacity: 0;
+  transition: background-color 0.3s;
+}
+
+.nav__link:focus {
+  outline-offset: 5px;
+  outline-color: var(--x-color);
+}
+
+.nav__link:hover {
+  outline: none;
+}
+
+.nav__link:hover::before {
+  opacity: 1;
+}
+
+.nav__link:active {
+  color: var(--z-color);
+  outline: none;
+}
+
+.nav__link:active::before {
+  background-color: var(--z-color);
+}
+
+.header__link:focus {
+  outline-offset: 5px;
+  outline-color: var(--x-color);
+}
+
+.header__link:hover {
+  outline: none;
+}
+
+.header__link:hover svg rect {
+  fill: var(--x-color);
+}
+
+.header__link:hover svg path {
+  stroke: var(--x-color);
+}
+
 
 
 /*  hero  */
@@ -169,7 +224,7 @@ a {
 }
 
 .hero__des {
-  margin-bottom: 115px;
+  margin-bottom: 90px;
   max-width: 790px;
   color: var(--n-base-color);
   font-weight: 700;
@@ -178,6 +233,7 @@ a {
 }
 
 .hero__btn {
+  display: inline-block;
   padding: 25px 40px;
   color: var(--n-base-color);
   font-weight: 700;
@@ -185,6 +241,20 @@ a {
   line-height: 28px;
   background-color: var(--x-color);
   border-radius: 16px;
+  outline: none;
+  transition: background-color 0.5s;
+}
+
+.hero__btn:focus {
+  background-color: var(--y-color);
+}
+
+.hero__btn:hover {
+  background-color: var(--y-color);
+}
+
+.hero__btn:active {
+  background-color: var(--z-color);
 }
 
 
@@ -251,6 +321,21 @@ a {
   padding: 20px 38px;
   border: 3px solid var(--x-color);
   border-radius: 16px;
+  outline: none;
+  transition: background-color 0.5s;
+}
+
+.left__btn:focus {
+  background-color: var(--x-color);
+}
+
+.left__btn:hover {
+  background-color: var(--x-color);
+}
+
+.left__btn:active {
+  background-color: var(--z-color);
+  border-color: transparent;
 }
 
 .us__right {
@@ -314,11 +399,27 @@ a {
   margin-right: 86px;
 }
 
-.work__linl {
+.work__link {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   color: var(--base-color);
+  transition: color 0.3s;
+}
+
+.work__link:focus {
+  outline-color: var(--x-color);
+  outline-offset: 3px;
+}
+
+.work__link:hover {
+  color: var(--x-color);
+  outline: none;
+}
+
+.work__link:active {
+  color: var(--z-color);
+  outline: none;
 }
 
 .block__left {
@@ -338,7 +439,7 @@ a {
 
 .block__descr {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 18px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -346,6 +447,7 @@ a {
 }
 
 .block__btn-1 {
+  display: inline-block;
   padding: 20px 38px;
   font-weight: 700;
   font-size: 16px;
@@ -354,9 +456,24 @@ a {
   background-color: var(--x-color);
   border-radius: 16px;
   margin-right: 32px;
+  transition: background-color 0.5s;
+  outline: none;
+}
+
+.block__btn-1:focus {
+  background-color: var(--y-color);
+}
+
+.block__btn-1:hover {
+  background-color: var(--y-color);
+}
+
+.block__btn-1:active {
+  background-color: var(--z-color);
 }
 
 .block__btn-2 {
+  display: inline-block;
   padding: 20px 38px;
   font-weight: 400;
   font-size: 16px;
@@ -364,6 +481,26 @@ a {
   color: var(--base-color);
   border: 1px solid var(--base-color);
   border-radius: 16px;
+  transition: background-color 0.5s, color 0.3s;
+  outline: none;
+}
+
+.block__btn-2:focus {
+  color: var(--n-base-color);
+  background-color: #666;
+  border-color: transparent;
+}
+
+.block__btn-2:hover {
+  color: var(--n-base-color);
+  background-color: #666;
+  border-color: transparent;
+}
+
+.block__btn-2:active {
+  color: var(--n-base-color);
+  background-color: #000;
+  border-color: transparent;
 }
 
 .block__img {
@@ -389,15 +526,54 @@ a {
 }
 
 .question__item {
-  align-items: center;
+  position: relative;
+  padding: 39px 0;
+  margin-top: -1px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #CACACA;
+  transition: border-color 0.5s;
+}
+
+.question__item:first-child {
+  border-top: 1px solid #CACACA;
+}
+
+.question__item:hover {
+  border-color: var(--x-color);
 }
 
 .question__link {
-  margin-right: auto;
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   color: var(--base-color);
+  transition: color 0.5s;
+  outline: none;
+}
+
+.question__item:hover .question__link {
+  color: var(--x-color);
+}
+
+.question__item svg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -25px;
+}
+
+.question__item svg ellipse,
+.question__item svg path {
+  transition: fill 0.5s;
+}
+
+.question__item:hover svg ellipse {
+  fill: var(--x-color);
+}
+
+.question__item:hover svg path {
+  fill: var(--n-base-color);
 }
 
 
@@ -438,10 +614,43 @@ a {
   font-size: 18px;
   line-height: 36px;
   color: #CACACA;
+  transition: color 0.3s;
+}
+
+.footer__link:focus {
+  outline-color: var(--z-color);
+  outline-offset: 3px;
+}
+
+.footer__link:hover {
+  color: var(--x-color);
+  outline: none;
+}
+
+.footer__link:active {
+  color: var(--z-color);
+  outline: none;
 }
 
 .footer__svg:not(:last-child) {
   margin-right: 25px;
+}
+
+.footer__svg:focus {
+  outline-color: var(--x-color);
+  outline-offset: 3px;
+}
+
+.footer__svg:hover {
+  outline: none;
+}
+
+.footer__svg:hover svg path {
+  fill: var(--x-color);
+}
+
+.footer__svg:active svg path {
+  fill: var(--z-color);
 }
 
 .footer__center {
@@ -464,6 +673,20 @@ a {
   margin-bottom: 32px;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #666666 inset;
+}
+
 .input__foot {
   background-color: #414141;
   border-radius: 16px;
@@ -472,6 +695,15 @@ a {
   font-size: 16px;
   line-height: 32px;
   color: #CACACA;
+  outline: none;
+}
+
+.input__foot:focus {
+  background-color: #666;
+}
+
+.input__foot:hover {
+  background-color: #666;
 }
 
 .input__foot:not(:last-child) {
@@ -496,9 +728,23 @@ a {
   line-height: 20px;
   color: var(--n-base-color);
   margin-right: 22px;
+  outline: none;
+  transition: background-color 0.5s;
 }
 
-.footer__security_descr {
+.footer__btn:focus {
+  background-color: var(--y-color);
+}
+
+.footer__btn:hover {
+  background-color: var(--y-color);
+}
+
+.footer__btn:active {
+  background-color: var(--z-color);
+}
+
+.footer__security-descr {
   margin-left: 3px;
   font-weight: 400;
   font-size: 16px;
