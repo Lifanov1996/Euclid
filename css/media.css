@@ -194,7 +194,7 @@
   }
 
   .hero__title {
-    width: 588px;
+    width: 100%;
     font-size: 50px;
     line-height: 61px;
   }
@@ -255,6 +255,7 @@
 
   /*  footer  */
   .footer__block {
+    align-items: center;
     flex-direction: column-reverse;
   }
 
@@ -268,9 +269,6 @@
 }
 
 @media (max-width: 576px) {
-  .us {
-    display: none;
-  }
 
   .section-offset {
     margin-bottom: 60px;
@@ -312,6 +310,7 @@
   }
 
   .hero__title {
+    align-self: center;
     text-align: center;
     width: 247px;
     font-size: 20px;
