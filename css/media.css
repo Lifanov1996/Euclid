@@ -1,0 +1,184 @@
+@media (max-width: 1300px) {
+  .header__nav {
+   margin-right: 100px;
+
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 45px;
+  }
+
+  .left__block {
+    flex-direction: column;
+  }
+
+  .left__descr {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .left__btn {
+    display: block;
+  }
+
+  .right__item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .right__svg {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .section-offset {
+    margin-bottom: 80px;
+  }
+
+  .container {
+    padding: 0 50px;
+  }
+
+  .section-offset-1 {
+    margin-bottom: 40px;
+  }
+
+  /*  header  */
+  .header__med {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    margin-right: 0;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .burger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 23px;
+    background-color: #fff;
+  }
+
+  .burger__line {
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    transform: translateX(-50%);
+  }
+
+  .burger__line:nth-child(1) {
+    top: 0;
+  }
+
+  .burger__line:nth-child(2) {
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .burger__line:nth-child(3) {
+    bottom: 0;
+  }
+
+
+  /*  hero  */
+  .hero-img {
+    background-image: url(/img/hero-media-1025.jpg);
+    padding: 160px 77px;
+  }
+
+  .hero__title {
+    margin-bottom: 16px;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .hero__des {
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /*  us  */
+  .us__bottom {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .us__left {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+
+  .left__img {
+    min-height: 640px;
+  }
+
+  .left__block {
+    flex-direction: row;
+  }
+
+  .left__descr {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .us__right {
+    width: 100%;
+  }
+
+  .right__item {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .right__svg {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+
+
+  /*  work  */
+  .work__list {
+    margin-bottom: 50px;
+  }
+
+  .block__descr {
+    margin-bottom: 25px;
+  }
+
+
+  /*  question  */
+  .question__link {
+    font-size: 20px;
+  }
+
+
+  /*  footer  */
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footer__center {
+    width: 541px;
+    margin-right: 0;
+  }
+
+  .footer__right {
+    display: none;
+  }
+}

@@ -83,7 +83,7 @@ body {
 }
 
 .container {
-  width: 1800px;
+  max-width: 1800px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -110,6 +110,7 @@ a {
 
 /*  Header  */
 .header {
+  width: 100%;
   height: 100px;
   padding: 14px;
   background-color: #fff;
@@ -120,6 +121,10 @@ a {
 
 .header-menu {
   align-self: center;
+}
+
+.burger {
+  display: none;
 }
 
 .header__logo {
@@ -199,7 +204,7 @@ a {
 
 /*  hero  */
 .hero-img {
-  width: 1770px;
+  width: 100%;
   min-height: 620px;
   padding: 100px 80px;
   background-image: url(/img/hero.jpg);
@@ -279,12 +284,12 @@ a {
 }
 
 .us__left {
-  max-width: 868px;
+  width: 50%;
   margin-right: 32px;
 }
 
 .left__img {
-  width: 868px;
+  width: 100%;
   min-height: 100%;
   background-image: url(/img/us-left.jpg);
   background-position: center center;
@@ -340,10 +345,11 @@ a {
 
 .us__right {
   align-self: flex-end;
+  width: 50%;
 }
 
 .right__list {
-  width: 870px;
+  width: 100%;
   flex-direction: column;
 }
 
@@ -424,10 +430,14 @@ a {
   outline: none;
 }
 
+.work__block {
+  width: 100%;
+}
+
 .block__left {
   flex-direction: column;
-  max-width: 758px;
-  margin-right: auto;
+  width: 49%;
+  margin-right: 50px;
 }
 
 .block__title {
@@ -440,6 +450,7 @@ a {
 }
 
 .block__descr {
+  max-width: 758px;
   margin: 0;
   margin-bottom: 18px;
   font-weight: 400;
@@ -505,8 +516,12 @@ a {
   border-color: transparent;
 }
 
+.block__right {
+  width: 50%;
+}
+
 .block__img {
-  width: 870px;
+  width: 100%;
   min-height: 100%;
   background-image: url(/img/work-1.jpg);
   background-position: center center;
@@ -586,6 +601,10 @@ a {
   border-color: #CACACA;
 }
 
+.question__descr {
+  margin-right: 100px;
+}
+
 .question__link svg {
   position: absolute;
   right: 0;
@@ -634,7 +653,7 @@ a {
 }
 
 .footer__block {
-  padding: 50px 0;
+  padding-top: 50px;
   justify-content: space-between;
 }
 
@@ -705,6 +724,7 @@ a {
 
 .footer__center {
   width: 570px;
+  margin-right: 30px;
 }
 
 .footer__title {
@@ -718,7 +738,7 @@ a {
 }
 
 .footer__input {
-  width: 570px;
+  width: 100%;
   flex-direction: column;
   margin-bottom: 32px;
 }
