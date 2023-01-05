@@ -285,10 +285,12 @@ a {
 
 .us__left {
   width: 50%;
+  position: relative;
   margin-right: 32px;
 }
 
 .left__img {
+  position: absolute;
   width: 100%;
   min-height: 100%;
   background-image: url(/img/us-left.jpg);
@@ -301,6 +303,8 @@ a {
 
 .left__block {
   align-items: center;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   min-height: 196px;
   padding: 50px;
