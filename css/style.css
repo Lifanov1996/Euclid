@@ -214,6 +214,28 @@ a {
   border-radius: 32px;
 }
 
+.hero-img-2 {
+  width: 100%;
+  min-height: 620px;
+  padding: 100px 80px;
+  background-image: url(/img/hero-2.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 32px;
+}
+
+.hero-img-3 {
+  width: 100%;
+  min-height: 620px;
+  padding: 100px 80px;
+  background-image: url(/img/hero-3.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 32px;
+}
+
 .hero__decrs {
   flex-direction: column;
 }
@@ -527,12 +549,39 @@ a {
 .block__img {
   width: 100%;
   min-height: 100%;
-  background-image: url(/img/work-1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 32px;
   align-self: flex-end;
+}
+
+.work-1 {
+  background-image: url(/img/work-1.jpg);
+}
+
+.work-2 {
+  background-image: url(/img/work-2.jpg);
+}
+
+.work-3 {
+  background-image: url(/img/work-3.jpg);
+}
+
+.work-4 {
+  background-image: url(/img/work-4.jpg);
+}
+
+.work__link--active {
+  color: var(--z-color);
+}
+
+.work__block {
+  display: none;
+}
+
+.work__block--active {
+  display: flex;
 }
 
 
