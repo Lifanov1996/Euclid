@@ -21,6 +21,7 @@ menuLinks.forEach(function (el) {
   });
 });
 
+
 /*  табы в секции “Как мы работаем”  */
 let tabsBtn = document.querySelectorAll('.work__link');
 let tabsItem = document.querySelectorAll('.work__block');
@@ -39,4 +40,13 @@ tabsBtn.forEach(function(element){
     });
     document.querySelector(`[data-target="${path}"]`).classList.add('work__block--active');
   });
+});
+
+
+/*  Аккордион  */
+new Accordion('.accordion-list', {
+	elementClass: 'accordion',
+	triggerClass: 'accordion__control',
+	panelClass: 'accordion__content',
+	activeClass: 'accordion--active'
 });

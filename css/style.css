@@ -698,6 +698,39 @@ a {
   transform: rotate(45deg);
 }
 
+.question__descrip {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--base-color);
+  margin: 0;
+}
+
+.question__descrip:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.accordion__content {
+	overflow: hidden;
+	visibility: hidden;
+	transition-property: height, visibility;
+	transition-timing-function: ease;
+}
+
+.accordion--active .accordion__content {
+	visibility: visible;
+}
+
+.list {
+	list-style: none;
+	padding: 0;
+}
+
+.accordion__heading {
+	margin: 0;
+}
+
+
 
 /*  footer  */
 .footer {
