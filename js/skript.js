@@ -50,3 +50,16 @@ new Accordion('.accordion-list', {
 	panelClass: 'accordion__content',
 	activeClass: 'accordion--active'
 });
+
+
+/*  слайдер  */
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  loop: true,
+  // пагинация
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+    },
+  });
+
