@@ -22,6 +22,28 @@ menuLinks.forEach(function (el) {
 });
 
 
+/*  поиск  */
+let search = document.querySelector('.header__link');
+let serchBlock = document.querySelector('.search');
+let searchBlockLinks = document.querySelector('.search-form__close')
+
+search.addEventListener('click', function () {
+  serchBlock.classList.toggle('search--active');
+
+  document.body.classList.toggle('stop__scroll');
+});
+
+searchBlockLinks.addEventListener('click', function () {
+  serchBlock.classList.remove('search--active');
+
+  document.body.classList.remove('stop__scroll');
+
+  document.querySelector('.search-form').addEventListener('click', (el) => { el.preventDefault()})
+});
+
+
+
+
 /*  табы в секции “Как мы работаем”  */
 let tabsBtn = document.querySelectorAll('.work__link');
 let tabsItem = document.querySelectorAll('.work__block');

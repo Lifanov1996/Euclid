@@ -107,6 +107,10 @@ a {
   text-decoration: none;
 }
 
+.stop__scroll {
+  overflow: hidden;
+}
+
 
 /*  Header  */
 .header {
@@ -183,6 +187,11 @@ a {
   background-color: var(--z-color);
 }
 
+.header__link {
+  background-color: inherit;
+  border: none;
+}
+
 .header__link:focus {
   outline-offset: 5px;
   outline-color: var(--x-color);
@@ -198,6 +207,126 @@ a {
 
 .header__link:hover svg path {
   stroke: var(--x-color);
+}
+
+.header__link:active {
+  outline: none;
+}
+
+.header__link:active svg rect {
+  fill: var(--x-color);
+}
+
+.header__link:active svg path {
+  stroke: var(--x-color);
+}
+
+.search {
+  padding: 16px 13px 16px 32px;
+  width: 539px;
+  height: 60px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 24px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  position: absolute;
+  right: 0;
+  top: -100%;
+  transition: top 0.3s;
+}
+
+.search--active {
+  top: 0;
+}
+
+.search-form__input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #CACACA;
+  width: 412px;
+  padding: 0;
+  margin-right: 14px;
+}
+
+.search-form__send {
+  background-color: inherit;
+  border: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.search-form__send:focus {
+  outline-offset: 5px;
+  outline-color: var(--x-color);
+}
+
+.search-form__send:hover {
+  outline: none;
+}
+
+.search-form__send:hover svg rect {
+  outline: none;
+}
+
+.search-form__send:hover svg rect {
+  fill: var(--x-color);
+}
+
+.search-form__send:hover svg path {
+  stroke: var(--x-color);
+}
+
+.search-form__send:active {
+  outline: none;
+}
+
+.search-form__send:active svg rect {
+  fill: var(--x-color);
+}
+
+.search-form__send:active svg path {
+  stroke: var(--x-color);
+}
+
+.search-form__close {
+  background-color: inherit;
+  border: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+
+.search-form__close:focus {
+  outline-offset: 5px;
+  outline-color: var(--x-color);
+}
+
+.search-form__close:hover {
+  outline: none;
+}
+
+.search-form__close:hover svg rect {
+  fill: var(--x-color);
+}
+
+.search-form__close:hover svg circle {
+  stroke: var(--x-color);
+}
+
+.search-form__close:active {
+  outline: none;
+}
+
+.search-form__close:active svg rect {
+  fill: var(--base-color);
+}
+
+.search-form__close:active svg circle {
+  stroke: var(--base-color);
 }
 
 
