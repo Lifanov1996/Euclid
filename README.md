@@ -8,6 +8,7 @@
 
 ![Scren](https://github.com/Lifanov1996/Euclid/blob/main/img/euclid-2.png)
 
+
 ![Scren](https://github.com/Lifanov1996/Euclid/blob/main/img/euclid-3.png)
 
 Адаптивна для любых устройств от 320 до 3840 пикселей по ширине
