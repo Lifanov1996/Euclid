@@ -4,11 +4,11 @@
 
 Все ссылки и кнопки имеют focus, hover и activ эффекты
 
-Реализован слайдер, табы, аккордеон на JS
+Реализован слайдер, табы, аккордеон на JS ...
 
 ![Scren](https://github.com/Lifanov1996/Euclid/blob/main/img/euclid-2.png)
 
-бургер меню(JS)
+бургер меню(JS)...
 
 ![Scren](https://github.com/Lifanov1996/Euclid/blob/main/img/euclid-3.png)
 
