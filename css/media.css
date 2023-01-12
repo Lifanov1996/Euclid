@@ -167,14 +167,18 @@
 
   /*  hero  */
   .hero-img-1 {
-    padding: 160px 77px;
+    background-image: url(/img/hero-media-1025.jpg);
   }
 
   .hero-img-2 {
-    padding: 160px 77px;
+    background-image: url(/img/hero-pic-1024-2.jpg);
   }
 
   .hero-img-3 {
+    background-image: url(/img/hero-pic-1024-3.jpg);
+  }
+
+  .hero__decrs {
     padding: 160px 77px;
   }
 
@@ -275,19 +279,19 @@
 
 
   /*  hero  */
-  .hero-img {
-    min-height: auto;
-  }
-
   .hero-img-1 {
-    padding: 160px 40px;
+    background-image: url(/img/hero-pic-768-1.jpg);
   }
 
   .hero-img-2 {
-    padding: 160px 40px;
+    background-image: url(/img/hero-pic-768-2.jpg);
   }
 
   .hero-img-3 {
+    background-image: url(/img/hero-pic-768-3.jpg);
+  }
+
+  .hero__decrs {
     padding: 160px 40px;
   }
 
@@ -443,18 +447,22 @@
   }
 
   .hero-img-1 {
-    padding: 60px 22px;
+    background-image: url(/img/hero-pic-320-1.jpg);
     border-radius: 16px;
   }
 
   .hero-img-2 {
-    padding: 60px 22px;
+    background-image: url(/img/hero-pic-320-2.jpg);
     border-radius: 16px;
   }
 
   .hero-img-3 {
-    padding: 60px 22px;
+    background-image: url(/img/hero-pic-320-3.jpg);
     border-radius: 16px;
+  }
+
+  .hero__decrs {
+    padding: 60px 22px;
   }
 
   .hero__title {

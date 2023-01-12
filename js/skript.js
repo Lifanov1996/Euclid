@@ -75,8 +75,7 @@ new Accordion('.accordion-list', {
 
 
 /*  слайдер  */
-const swiper = new Swiper('.swiper', {
-  slidesPerView: 1,
+const swiper = new Swiper('.swiper-container', {
   loop: true,
   // пагинация
   pagination: {
