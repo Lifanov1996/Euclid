@@ -14,7 +14,7 @@
 <body>
   <header class="header header-section section-offset-1">
     <div class="container header__med flex">
-      <button class="btn-reset burger">
+      <button aria-label="Открыть навигационное меню" class="btn-reset burger">
         <span class="burger__line"></span>
         <span class="burger__line"></span>
         <span class="burger__line"></span>
@@ -22,14 +22,14 @@
         <div class="search flex">
           <form class="search-form flex">
             <input class="search-form__input" type="text" placeholder="Что будем искать?">
-            <button class="search-form__send">
+            <button aria-label="Найти" class="search-form__send">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="black"/>
                 <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198
                 20.9303 10.7726Z" stroke="black" stroke-width="2"/>
               </svg>
             </button>
-            <button class="search-form__close">
+            <button aria-label="Отмена" class="search-form__close">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="8.9541" y="7.30432" width="11.6645" height="2.33291" transform="rotate(45 8.9541 7.30432)" fill="#CACACA"/>
                 <rect x="7.30469" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30469 15.5524)" fill="#CACACA"/>
@@ -72,7 +72,7 @@
           </ul>
         </nav>
         <div class="header__search">
-          <button class="header__link">
+          <button aria-label="Открыть панель поиска" class="header__link">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="black"/>
               <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198
@@ -199,22 +199,22 @@
         <div class="work__header">
           <ul class="work__list list-reset flex">
             <li class="work__item">
-              <button class="work__link work__link--active" data-path="one">
+              <button aria-label="Первый шаг" class="work__link work__link--active" data-path="one">
                 1&nbsp;шаг
               </button>
             </li>
             <li class="work__item">
-              <button class="work__link" data-path="two">
+              <button aria-label="Второй шаг" class="work__link" data-path="two">
                 2&nbsp;шаг
               </button>
             </li>
             <li class="work__item">
-              <button class="work__link" data-path="three">
+              <button aria-label="Третий шаг" class="work__link" data-path="three">
                 3&nbsp;шаг
               </button>
             </li>
             <li class="work__item">
-              <button href="#" class="work__link" data-path="four">
+              <button aria-label="Четвёртый шаг" class="work__link" data-path="four">
                 4&nbsp;шаг
               </button>
             </li>
@@ -509,7 +509,7 @@
           </li>
         </ul>
         <div class="footer__soc flex">
-          <a href="#" class="footer__svg">
+          <a aria-label="Социальная сеть компании в одноклассниках" href="#" class="footer__svg">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M25.7054 19.9812C25.7054 22.4546 27.7105 24.4598 30.1838 24.4598C32.6572 24.4598 34.6623 22.4546 34.6623 19.9812C34.6623 17.5079 32.6572 15.5028 30.1838
               15.5028C27.7105 15.5028 25.7054 17.5079 25.7054 19.9812Z" fill="#666666"/>
@@ -522,7 +522,7 @@
               40.5198 30.9778 41.5375 32.247C42.5553 33.5163 42.3515 35.3702 41.0823 36.3881Z" fill="#666666"/>
             </svg>
           </a>
-          <a href="#" class="footer__svg">
+          <a aria-label="Социальная сеть компании в контакте" href="#" class="footer__svg">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M30 0C13.432 0 0 13.4314 0 30C0 46.5686 13.432 60 30 60C46.568 60 60 46.5686 60 30C60 13.4314 46.568 0 30 0ZM45.2176 33.2446C46.6159 34.6103 48.0951 35.8957
               49.3504 37.4026C49.9065 38.0692 50.4307 38.7585 50.8297 39.5337C51.3993 40.6392 50.8849 41.8515 49.8954 41.9171L43.7494 41.9159C42.162 42.0473 40.8988 41.4071 39.8339
@@ -545,9 +545,9 @@
         </h3>
         <form action="#" method="post">
           <div class="input footer__input flex">
-            <input class="input__foot input__fio" type="text" name="Fio" required placeholder="Фамилия, имя и отчество*">
-            <input class="input__foot input__email" type="text" name="Email" required placeholder="Email*">
-            <textarea class="input__foot input__mes" name="Message" required placeholder="Сообщение"></textarea>
+            <input aria-label="Введите Фамилия, имя и отчество" class="input__foot input__fio" type="text" name="Fio" required placeholder="Фамилия, имя и отчество*">
+            <input aria-label="Введите электронную почту" class="input__foot input__email" type="text" name="Email" required placeholder="Email*">
+            <textarea aria-label="Введите сообщение" class="input__foot input__mes" name="Message" required placeholder="Сообщение"></textarea>
           </div>
           <div class="footer__secur">
             <button class="footer__btn" type="submit">
