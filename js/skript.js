@@ -82,5 +82,9 @@ const swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     clickable: true
     },
+
+  a11y: {
+    paginationBulletMessage: 'Слайд №{{index}}',
+  }
   });
 

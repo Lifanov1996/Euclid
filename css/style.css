@@ -222,6 +222,7 @@ a {
 }
 
 .search {
+  display: none;
   padding: 16px 13px 16px 32px;
   width: 539px;
   height: 60px;
@@ -238,6 +239,7 @@ a {
 }
 
 .search--active {
+  display: block;
   top: 0;
 }
 
